@@ -42,4 +42,6 @@ def read_and_display_ascii_art(file_path):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
+##for example -->
+
 read_and_display_ascii_art("/home/rattatwingo/Desktop/VsCode/python/rainbow/reader/pacman.txt")
