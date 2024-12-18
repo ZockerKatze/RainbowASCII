@@ -10,6 +10,8 @@ To create animations with this Reader/Displayer, you need to memorize some keywo
 
 The syntax for **STARTH** and **ENDH** is straightforward:
 
+- **STARTH** (Starting Header) indicates the beginning of a frame. 🟢
+- **ENDH** (Ending Header) marks the end of the frame. 🔴
 - You must always pair **STARTH** with **ENDH**. ✅
 - You cannot have a **STARTH** directly following another **STARTH**; doing so will result in an error. ⚠️
 
@@ -20,12 +22,12 @@ The **TIME** keyword is used to specify the duration of frames in an animation. 
 If your animation contains multiple frames that are spaced differently in time (e.g., 2 seconds, 4 seconds), use the following format:
 
 ```plaintext
-TIME 2
+TIME 2 ⏳
 STARTH
 "FRAME1"
 ENDH
 
-TIME 4
+TIME 4  # for 4 seconds ⏳
 STARTH
 "FRAME2"
 ENDH
