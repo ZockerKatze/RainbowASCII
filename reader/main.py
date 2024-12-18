@@ -1,28 +1,11 @@
 import rainbow as AA
 import os
 import time
-"""
-If you want to make some ASCII Art yourself you need to only know 2 keywords!
-STARTH
-ENDH
 
-Standing for Start of Header
-Standing for End of Header
-say for example you want to do some animation:
-
-start of with
-STARTH
-ascii
-ENDH
-STARTH
-ascii
-ENDH
-"""
-
-def read_and_display_ascii_art(file_path):
+def read_and_display_ascii_art(file_path): # mainfunction
     try:
         with open(file_path, 'r') as file:
-            content = file.read()
+            content = file.read() # read file
 
         frames = content.split('STARTH')
 
@@ -31,13 +14,13 @@ def read_and_display_ascii_art(file_path):
                 ascii_art = frame.split('ENDH')[0].strip()
 
                 if ascii_art:
-                    # Clear the terminal
-                    os.system('cls' if os.name == 'nt' else 'clear')
-                    AA.RAP(ascii_art)
+                    # Clear terminal
+                    os.system('cls' if os.name == 'nt' else 'clear') #check for linux
+                    AA.RAP(ascii_art) # call file for ascii (rainbow.py)!
 
                     time.sleep(0.2)
 
-    except FileNotFoundError:
+    except FileNotFoundError: # filepath error
         print(f"Error: The file at {file_path} was not found.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
