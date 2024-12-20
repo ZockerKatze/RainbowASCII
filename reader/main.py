@@ -2,7 +2,7 @@ import rainbow as AA
 import os
 import time
 
-def read_and_display_ascii_art(file_path):  # main function
+def RaDA(file_path):  # main function
     try:
         while True: 
             with open(file_path, 'r') as file:
@@ -35,6 +35,6 @@ def read_and_display_ascii_art(file_path):  # main function
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
+fpath = "path/to/ur/animation.txt"
 
-# Example usage
-read_and_display_ascii_art("/home/rattatwingo/Desktop/VsCode/python/rainbow/reader/demos/demo.txt")
+RaDA(fpath)
