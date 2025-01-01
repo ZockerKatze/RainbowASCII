@@ -1,33 +1,55 @@
-### this file is usedc to make some pretty terminal text!
-## import every module
-## this version does not use ASCII
-
-
 import shutil
 import colorama
 from colorama import Fore
 import pyfiglet
 
+## this uses more libs than the mainfile ;3
+
+## make a autoreset
 colorama.init(autoreset=True)
 
-## liste von den farben die in der font verwendet werden
+
+## define the rainbow_colors list
+
+        ## --->
 
 rainbow_colors = [Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.CYAN, Fore.BLUE, Fore.MAGENTA]
 
-## def RAP function for use in other files  import as AA as its the simplest or smth idk
+        ## <---
+
+
 
 def RAP(text):
+
+    ## inside the RAP function define a printcenter function
+
+    ## -->
+
     def print_center(s):
         print(s.center(shutil.get_terminal_size().columns))
 
-    ## define the function for text rainbo
+    ## <--
+
+
+    ## define the rainbowtext funciton with a text input e.g --> rainbow_text("text")
+
+
+    ## ----------------------------------------------------------------------------------------------------------->
+
 
     def rainbow_text(text):
         colored_text = "" ## emptysrting for coplored text as start assign
         for i, char in enumerate(text): ## enumerate char for text value
             color = rainbow_colors[i % len(rainbow_colors)] ## color each char for rainbowcolors
-            colored_text += f"{color}{char}"  ## make the value in ln30 useful by assigning the ctext
+            colored_text += f"{color}{char}"  ## make the value useful by assigning the ctext
         return colored_text ## return the colored value to the function
 
-    rtext = rainbow_text(text) ## raa uses rainbow_text to format asciiart in LN37
-    print_center(rtext) ## print centred raa value in LN44 (does not work!)
+
+    ## <-----------------------------------------------------------------------------------------------------------
+
+
+    ## out of the function (ootf!)
+
+
+    rtext = rainbow_text(text) ## raa uses rainbow_text to format asciiart in
+    print_center(rtext) ## print centred raa value in (does not work!)
