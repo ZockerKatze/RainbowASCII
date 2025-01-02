@@ -3,10 +3,14 @@ import os
 import time
 
 ## how does this shit only use like 3 librarys?
-    ## ik why! because its only the fucking reader!
-
 
 def RaDA(file_path):  # main function
+
+
+## with file_path read file
+## filepath can also be specified in a seperate variable named fpath and be called into RaDA <-- Dont even know what the abrv. is for anymore
+
+
     try:
         while True:
             with open(file_path, 'r') as file:
@@ -79,10 +83,30 @@ def RaDA(file_path):  # main function
 
                     if ":3" in frame:
                         try:
-                            cfl = [line for line in frame.split("\n") if line.startswith(":3")[":3"]]
-                            cfv = str(cfl.split(":3")[":3"].strip())
-                            cf_end = cfv
-                            print(cf_end)
+
+                                    ## this code does not make any sense at all
+                                    ## maybe a print(":3") would do?
+                                    ## spoiler --> it does not fucking work
+                                    ## this section of code is useless
+
+
+
+                            """
+
+                            ## code before mod ***>
+
+
+                            #cfl = [line for line in frame.split("\n") if line.startswith(":3")[":3"]]
+                            #cfv = str(cfl.split(":3")[":3"].strip())
+                            #cf_end = cfv
+                            #print(cf_end)
+
+                            ## <***
+
+                            """
+
+                            print(":3")
+
                         except ValueError:
                             exit()
                             print("OwO? Catface, fucked your code :3")
@@ -114,21 +138,41 @@ def RaDA(file_path):  # main function
 
             ## --->
 
+    ## -----------------------------------------------------
+
+                    ### For first exception use {file_path} var and built in FnFE!
+
     except FileNotFoundError:  # file path error
         print(f"Error: The file at {file_path} was not found.")
+
+
+    ## -----------------------------------------------------
+
+                    ### for keyboard interrupt use exception
+
+
     except KeyboardInterrupt:
         print("\n STRG + C INTERRUPT.")
+
+    ## -----------------------------------------------------
+                    ## for exception 3 use {e} var
+
+
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
+
+    ## -----------------------------------------------------
 
             ## <---
 
 
- ### out of the function now --->
+### out of the function now --->
+### it does not look like its ootf
 
-## set variable for the function to read from
 
-fpath = "/home/rattatwingo/Desktop/python/RainbowASCII-main/reader/demos/pacman.txt"
+### set variable for the function to read from
+
+fpath = "/home/rattatwingo/Desktop/python/RainbowASCII-main/reader/demos/catface.txt"
 RaDA(fpath) ## read from !fpath!
 
- ### <--- end of ootf!
+### <--- end of ootf!

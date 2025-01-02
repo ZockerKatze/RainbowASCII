@@ -1,3 +1,18 @@
+"""
+AoT (ahead of time) i dont know where i got this formatting style from with the arrows
+but maybe its HTML because the comments there use <!-- --> to comment so maybe its that
+ill maybe make more of these AoT's from time to time
+
+Anyways here is the code for rainbow.py
+which is always required to be in the same directory as the main.py file as it uses it
+
+
+EDITED WITH VIM :3
+
+
+"""
+
+
 import shutil
 import colorama
 from colorama import Fore
@@ -9,7 +24,7 @@ import pyfiglet
 colorama.init(autoreset=True)
 
 
-## define the rainbow_colors list
+## define the rainbow_colors list (All 1)
 
         ## --->
 
