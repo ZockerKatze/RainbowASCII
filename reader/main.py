@@ -111,9 +111,50 @@ def RaDA(file_path):  # main function
                             exit()
                             print("OwO? Catface, fucked your code :3")
 
+
                 ## <---
 
 
+                ## Here again some of my peak degeneracy
+
+
+                ## --->
+
+
+                if "OwO" or "owo" in frame:
+                    try:
+
+                        ## this part of the code does NOT work!
+
+                        print("Do you know how to braid?")
+                        ch = str(input("Y/N : "))
+
+                        ## make a if choice thing that does not fucking work
+
+                        if ch == "y" or "Y":
+                            print("certified hood classic :3")
+                        else:
+                            print("You need to learn how to braid!")
+
+                        ## make a HardExit as its *efficient*
+
+                        exit()
+                    except ValueError:
+                        print("Idk some random error prob. fuckd it up")
+                        exit()
+
+
+                ## <---
+
+                        """
+
+
+NOTE TO SELF:
+
+                )-  LONG CODE COMMENTS ARE SUPPOSED TO BE IN THIS!
+                )-  LEARN PYTHON YOU FUCKING MORON
+                )-  THESE ML COMMENTS NEED TO BE ACCORDING TO SYNTAX!
+                )-  MAKE ANYTHING BUT STUPID FUNCTIONS THAT SLOW DOWN THE CODE!
 
 
 ## make shitty asciiart display or smth. idk
@@ -123,6 +164,7 @@ def RaDA(file_path):  # main function
     ## with the before imported AsciiArt file use the RAP func
     ## finally use the time.sleep function with the before defined value of "frame_time"
 
+                        """
             ## --->
 
                     if ascii_art:
@@ -176,3 +218,13 @@ fpath = "/home/rattatwingo/Desktop/python/RainbowASCII-main/reader/demos/catface
 RaDA(fpath) ## read from !fpath!
 
 ### <--- end of ootf!
+
+
+
+"""
+
+Idk why i did this formatting style here but I think its readable
+I try to make my code as readable as fucking possible by doing those pretty
+    arrows to do mark where code begins / ends
+
+"""
