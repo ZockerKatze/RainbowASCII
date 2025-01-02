@@ -116,7 +116,7 @@ def RaDA(file_path):  # main function
 
 
                 ## Here again some of my peak degeneracy
-
+                ## :3 OwO this code is peak if you at any time insult this shit i will burn your house to the ground :3
 
                 ## --->
 
