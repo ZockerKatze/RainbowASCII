@@ -156,6 +156,10 @@ NOTE TO SELF:
                 )-  THESE ML COMMENTS NEED TO BE ACCORDING TO SYNTAX!
                 )-  MAKE ANYTHING BUT STUPID FUNCTIONS THAT SLOW DOWN THE CODE!
 
+NOTE TO OTHERS:
+
+                )-  IF YOU WANT TO READ THIS IN VIM LIKE I AM READ IT WITH SOURCE CODE PRO BOLD FONT!
+                )-  WITH THAT FONT IT LOOKS WAY FUCKING BETTER!
 
 ## make shitty asciiart display or smth. idk
     ## with the os thing look at the system and check for NT or Linux!
