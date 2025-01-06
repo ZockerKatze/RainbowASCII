@@ -120,7 +120,7 @@ def RaDA(file_path):  # main function
 
                 ## --->
 
-
+                """
                 if "OwO" or "owo" in frame:
                     try:
 
@@ -145,7 +145,7 @@ def RaDA(file_path):  # main function
 
 
                 ## <---
-
+                """
                         """
 
 
